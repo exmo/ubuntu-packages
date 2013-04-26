@@ -1,0 +1,19 @@
+#!/bin/bash
+
+PKGDIR="/opt/android/tools/workspace"
+
+if [ ! -d $PKGDIR ]; then
+	echo "Diretório não encontrado: $PKGDIR"
+	exit 1
+fi
+
+find $PKGDIR -type d -exec chmod 777 {} \;
+find $PKGDIR -type f -exec chmod a+r,a+w {} \;
+
+
+cp $PKGDIR/.android /home/$SUDO_USER -R
+chmod 777 -R /home/$SUDO_USER/.android
+
+echo "SUDO_USER $SUDO_USER"
+
+exit 0

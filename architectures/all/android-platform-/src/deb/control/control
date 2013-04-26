@@ -1,0 +1,8 @@
+Package: [[name]]-[[version]]
+Version: 16.4
+Section: universe/java
+Priority: optional
+Architecture: all
+Depends: openjdk-6-jdk | sun-java6-jdk | openjdk-7-jdk
+Maintainer: SERPRO - CETEC/CTSDR
+Description: [[description]]

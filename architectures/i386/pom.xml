@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>android-infra-i386-build</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>Package i386 Build Aggregator</name>
+    <description>
+        Projeto que agrega todos os pacotes (.deb) que são utilizados na
+        arquitetura i386 android infra
+    </description>
+
+    <modules>
+        <module>android-eclipse</module>
+        <module>serpro-android</module>
+        <module>android-workspace</module>
+    </modules>
+
+     <parent>
+        <groupId>br.gov.serpro.infra</groupId>
+        <artifactId>android-infra-parent-build</artifactId>
+        <version>1.0</version>
+        <relativePath>../../parent/pom.xml</relativePath>
+     </parent>
+
+</project>
+

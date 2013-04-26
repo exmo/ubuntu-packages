@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PKGDIR="/opt/android/ide/eclipse"
+
+if [ ! -d $PKGDIR ]; then
+	echo "Diretório não encontrado: $PKGDIR"
+	exit 1
+fi
+
+# remover arquivos de LOG
+rm -f $PKGDIR/configuration/*.log
+
+# dar permissão de leitura e escrita a todos no eclipse.ini
+chmod a+r+w $PKGDIR/eclipse.ini
+chmod +x $PKGDIR/eclipse
+
+exit 0

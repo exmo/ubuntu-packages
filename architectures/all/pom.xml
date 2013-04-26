@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>android-infra-all-build</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>Package all Build Aggregator</name>
+    <description>
+        Projeto que agrega todos os pacotes (.deb) que são utilizados tanto nas
+        arquiteturas i386 e amd64 para o android infra
+    </description>
+
+    <modules>
+        <module>android-sdk</module>
+        <module>android-platform-8</module>
+        <module>android-platform-10</module>
+        <module>android-platform-16</module>
+    </modules>
+
+    <parent>
+        <groupId>br.gov.serpro.infra</groupId>
+        <artifactId>android-infra-parent-build</artifactId>
+        <version>1.0</version>
+        <relativePath>../../parent/pom.xml</relativePath>
+    </parent>
+
+</project>
+

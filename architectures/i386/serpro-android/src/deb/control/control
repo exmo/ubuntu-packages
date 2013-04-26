@@ -1,0 +1,8 @@
+Package: [[name]]
+Version: 1.0
+Section: universe/devel
+Priority: standard
+Architecture: all
+Depends: android-eclipse (>=4.2.1), android-sdk (>=4.0), android-workspace (>=1.0), platformversions
+Maintainer: SERPRO - CETEC/CTSDR
+Description: [[description]]
