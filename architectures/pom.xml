@@ -8,9 +8,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>i386</module>
-<!--        <module>amd64</module>-->
         <module>all</module>
+        <module>i386</module>
     </modules>
 
     <name>Build Aggregator Architectures</name>
