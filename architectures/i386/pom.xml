@@ -14,8 +14,8 @@
 
     <modules>
         <module>android-eclipse</module>
-        <module>serpro-android</module>
         <module>android-workspace</module>
+        <module>serpro-android</module>
     </modules>
 
      <parent>
