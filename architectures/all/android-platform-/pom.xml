@@ -10,11 +10,36 @@
 	Plataforma platformversion do Android.
     </description>
 
-	<parent>
-		<groupId>br.gov.serpro.infra.all</groupId>
-		<artifactId>android-infra-all-parent</artifactId>
-		<version>1.0</version>
-		<relativePath>../../../parent/all/pom.xml</relativePath>
-	</parent>
+    <parent>
+	<groupId>br.gov.serpro.infra.all</groupId>
+	<artifactId>android-infra-all-parent</artifactId>
+	<version>1.0</version>
+	<relativePath>../../../parent/all/pom.xml</relativePath>
+    </parent>
 
+    <build>
+      <finalName>android-platform-platformversion</finalName>
+      <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <version>2.3.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <phase>install</phase>
+                    <configuration>
+                        <file>${project.build.finalName}.${project.packaging}</file>
+                        <generatePom>false</generatePom>
+                        <pomFile>pom.xml</pomFile>
+                        <version>${my.version}</version>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+      </plugins>
+    </build>
+    
 </project>
