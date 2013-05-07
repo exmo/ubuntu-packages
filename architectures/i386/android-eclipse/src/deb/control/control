@@ -1,5 +1,5 @@
 Package: [[name]]
-Version: 4.2.2
+Version: [[version]]
 Section: universe/devel
 Priority: standard
 Architecture: i386
