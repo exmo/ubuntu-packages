@@ -1,4 +1,4 @@
-Package: [[name]]-[[version]]
+Package: [[name]]
 Version: [[version]]
 Section: universe/java
 Priority: optional
