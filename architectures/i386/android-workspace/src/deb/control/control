@@ -1,5 +1,5 @@
 Package: [[name]]
-Version: 1.0
+Version: [[version]]
 Section: universe/devel
 Priority: optional
 Architecture: i386
