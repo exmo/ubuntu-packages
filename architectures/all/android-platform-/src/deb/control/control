@@ -1,5 +1,5 @@
 Package: [[name]]-[[version]]
-Version: 16.4
+Version: [[version]]
 Section: universe/java
 Priority: optional
 Architecture: all
